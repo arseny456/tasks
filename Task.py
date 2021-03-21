@@ -47,13 +47,20 @@ def season(mounth):
 
 #банковский вклад
 def bank(a,years):
-    g = (a+((a/100*10)*(12*years)))
-    return g
-# print(bank(1000,2))
+   result = 0
+   for i in range(0, years):
+       print(a)
+       a = a * 1.1
+       result = a
+       return result
+##print(bank(1000,15))
 # Простое число
 def is_prime(Number):
-    if and :
-        return True
-    else:
-        return  False
-print(is_prime(4))
+        for b in range(0,Number+1):
+            if b == 1 or b == Number or b==0 :
+                continue
+            if Number % b == 0:
+                return False
+            else:
+                return  True
+print(is_prime(2))
